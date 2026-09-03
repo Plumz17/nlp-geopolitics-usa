@@ -10,6 +10,7 @@ Proyek dikerjakan dalam empat tahap sepanjang perkuliahan:
 2. Proposal Pipeline & Eksperimen Baseline
 3. Penyempurnaan Model & Integrasi Multimodal
 4. Pengujian Hipotesis, Analisis Error, & Laporan Akhir
+
 Progress kelompok kami berada pada Tugas 1: Akuisisi Data & Preprocessing Strategis.
 
 ### Anggota Tim "Jempol Kaki Azhar"
