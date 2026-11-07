@@ -37,10 +37,16 @@ Jalankan notebook di `src/` dari folder `src/`, sesuai urutan:
 | `00b_preprocessing` | Pembersihan teks, deduplikasi, dan `articles_clean.csv` |
 | `00c_timeseries_jisdor` | Membersihkan data kurs JISDOR |
 | `00d_alignment` | Menyelaraskan berita dengan hari perdagangan |
+| `00e_relevance_filter` | Filter relevansi judul+lead (aturan dibekukan), menghasilkan `articles_filtered.csv` untuk Model B_2 dan C |
 | `01_data_split` | Membentuk target, fitur harga, dan pembagian train/val/test |
 | `02_feature_extraction` | Fitur leksikon (VADER, Loughran-McDonald) dan TF-IDF |
 | `03_baseline_models` | Model baseline, model harga, dan model gabungan |
 | `04_evaluation` | Evaluasi dan analisis hasil |
+
+Notebook `01`-`04` memilih korpus lewat variabel lingkungan `CORPUS`:
+`full` (bawaan, Model B_1 / hasil Tugas 2, keluaran di `splits/`, `features/`, `results/`) atau
+`filtered` (Model B_2 dan C, keluaran di `splits_filtered/`, `features_filtered/`, `results_filtered/`).
+Contoh: `CORPUS=filtered jupyter lab`. Pembagian hari dan target identik di kedua korpus.
 
 EDA dan hasil eksperimen awal ada di `notebook/`.
 

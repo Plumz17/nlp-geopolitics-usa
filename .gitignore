@@ -11,8 +11,13 @@ env/
 # Secrets and local config
 .env
 
+# Task briefs and submitted reports (local only)
+docs/
+
 # OS / editor
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
+
+
