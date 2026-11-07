@@ -19,7 +19,7 @@ Tugas 1 dan 2 sudah selesai (data, baseline, dan evaluasi awal).
 ```
 data/
   raw/         berita hasil scraping dan data kurs mentah dari Bank Indonesia
-  processed/   artikel bersih, kurs harian, dan dataset hasil alignment
+  processed/   artikel bersih dan terfilter, kurs harian, dan dataset hasil alignment (penuh dan terfilter)
   lexicon/     kamus Loughran-McDonald
   splits/      train.csv, val.csv, test.csv (pembagian urut waktu) dan articles/ (teks berita per bagian)
   features/    features.csv (fitur NLP harian)
@@ -36,7 +36,7 @@ Jalankan notebook di `src/` dari folder `src/`, sesuai urutan:
 | `00a_scraper` | Scraping berita (Google News RSS) ke `data/raw/` |
 | `00b_preprocessing` | Pembersihan teks, deduplikasi, dan `articles_clean.csv` |
 | `00c_timeseries_jisdor` | Membersihkan data kurs JISDOR |
-| `00d_alignment` | Menyelaraskan berita dengan hari perdagangan |
+| `00d_alignment` | Menyelaraskan berita dengan hari perdagangan: `aligned_dataset.csv` (semua artikel) atau, dengan `CORPUS=filtered`, `aligned_dataset_filtered.csv` (artikel terfilter) |
 | `00e_relevance_filter` | Filter relevansi judul+lead (aturan dibekukan), menghasilkan `articles_filtered.csv` untuk Model B_2 dan C |
 | `01_data_split` | Membentuk target, fitur harga, dan pembagian train/val/test |
 | `02_feature_extraction` | Fitur leksikon (VADER, Loughran-McDonald) dan TF-IDF |
