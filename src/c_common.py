@@ -12,9 +12,10 @@ CARA PAKAI (di notebook, jalankan dari folder src/):
 
     # 1. Muat data
     from c_common import *
-    D, text = load_all()
+    D, text = load_all()              # default: data B_2 (hanya artikel Inggris terfilter)
+    # D, text = load_all("id")        # atau: Inggris terfilter + Indonesia
     #   D["train"], D["val"], D["test"] = tabel harga + target (satu baris per hari trading)
-    #   text = tabel teks per hari (kolom judul/lead/konten _en dan _id), index = tanggal
+    #   text = tabel teks per hari (kolom judul/lead/konten), index = tanggal
 
     # 2. Buat fitur teks kamu sendiri (embedding, skor leksikon, dll.).
     #    Hasilnya harus berupa tabel dengan kolom "date" + kolom-kolom fitur (angka).
@@ -60,7 +61,9 @@ DATA = Path("../data") if Path("../data").exists() else Path("data")
 RESULTS_C = DATA.parent / "results_c"                      # satu file .json per varian C
 FEATURES_C = DATA / "features_c"                           # tempat menyimpan fitur buatanmu (embedding, dll.)
 SPLITS = DATA / "splits_filtered"                          # split yang sama dengan Model B_2
-TEXT_FILE = DATA / "processed" / "aligned_dataset_id.csv"  # teks Inggris (terfilter) + Indonesia per hari
+# File teks per hari, dipilih lewat parameter corpus di load_all():
+TEXT_FILES = {"filtered": DATA / "processed" / "aligned_dataset_filtered.csv",  # B_2: hanya artikel Inggris terfilter
+              "id": DATA / "processed" / "aligned_dataset_id.csv"}               # Inggris terfilter + Indonesia
 SEED = 42                                                  # supaya hasil bisa direproduksi
 
 # Fitur harga yang sama dengan Model A/B (lihat 03_baseline_models). Selalu dipakai bersama fitur teks,
@@ -70,18 +73,25 @@ PRICE = ["ret_1", "ret_lag1", "ret_lag2", "ret_lag3", "ret_lag4",
 
 
 # ------------------------------------------------------------------ data
-def load_all():
+def load_all(corpus="filtered"):
     """Muat data. Return (D, text).
 
+    corpus  "filtered" (default) = data B_2: hanya artikel Inggris terfilter.
+            "id" = artikel Inggris terfilter + artikel CNBC Indonesia (aligned_dataset_id.csv).
     D    = {"train": df, "val": df, "test": df}. Tiap df punya kolom date, target (1 = kurs naik besok,
            0 = turun), target_ret, dan semua fitur harga di PRICE. Urutannya waktu, jangan diacak.
-    text = satu baris per hari trading (index = tanggal) dengan kolom teks gabungan hari itu:
-           judul_gabungan_en / _id, lead_paragraph_gabungan_en / _id, konten_gabungan_en / _id,
-           serta jumlah_berita_en / _id. Hari tanpa berita berisi string kosong.
+           (Split-nya sama untuk kedua corpus, yaitu split B_2.)
+    text = satu baris per hari trading (index = tanggal) dengan teks gabungan hari itu.
+           Nama kolom berbeda per corpus:
+             "filtered": jumlah_berita, judul_gabungan, lead_paragraph_gabungan, konten_gabungan
+             "id":       jumlah_berita_en / _id, judul_gabungan_en / _id,
+                         lead_paragraph_gabungan_en / _id, konten_gabungan_en / _id
+           Hari tanpa berita berisi string kosong.
     Gunakan `text` sebagai bahan untuk membuat fitur; hasilnya digabung ke D lewat kolom date.
     """
+    assert corpus in TEXT_FILES, f"corpus harus salah satu dari {list(TEXT_FILES)}"
     D = {s: pd.read_csv(SPLITS / f"{s}.csv", parse_dates=["date"]) for s in ["train", "val", "test"]}
-    text = pd.read_csv(TEXT_FILE, parse_dates=["date"]).set_index("date")
+    text = pd.read_csv(TEXT_FILES[corpus], parse_dates=["date"]).set_index("date")
     return D, text
 
 
