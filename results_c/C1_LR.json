@@ -1,0 +1,17 @@
+{
+  "name": "C1_LR",
+  "model": "LR",
+  "n_features": 31,
+  "best_params": {
+    "C": 0.003
+  },
+  "val": {
+    "DA": 0.5,
+    "BalAcc": 0.5005817711700065,
+    "F1_macro": 0.5,
+    "MCC": 0.0011635423400129282,
+    "AUC": 0.44085326438267614
+  },
+  "n_configs_tried": 2,
+  "note": "FastText cc.en.300 (bin, subword), konten_gabungan, PCA20"
+}

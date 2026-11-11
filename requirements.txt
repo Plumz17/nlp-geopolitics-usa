@@ -19,6 +19,9 @@ googlenewsdecoder>=0.1
 # NLP dasar (src/02_feature_extraction.ipynb)
 vaderSentiment>=3.3
 
+# Tugas 3: Model C_1, FastText (src/05a_C1_static.ipynb)
+gensim>=4.3
+
 # Tugas 3: fitur Transformer / embedding (belum dipakai; aktifkan sesuai pilihan Model C)
 # transformers>=4.40
 # torch>=2.2

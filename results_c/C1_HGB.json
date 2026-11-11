@@ -1,0 +1,20 @@
+{
+  "name": "C1_HGB",
+  "model": "HGB",
+  "n_features": 31,
+  "best_params": {
+    "max_depth": 3,
+    "learning_rate": 0.1,
+    "max_iter": 300,
+    "min_samples_leaf": 20
+  },
+  "val": {
+    "DA": 0.5284090909090909,
+    "BalAcc": 0.5327084680025856,
+    "F1_macro": 0.5228482769884044,
+    "MCC": 0.06752304944551178,
+    "AUC": 0.5468648998060763
+  },
+  "n_configs_tried": 2,
+  "note": "FastText cc.en.300 (bin, subword), konten_gabungan, PCA20"
+}
