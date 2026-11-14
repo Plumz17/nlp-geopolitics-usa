@@ -1,0 +1,17 @@
+{
+  "name": "C2_finbert_both_cls_LR",
+  "model": "LR",
+  "n_features": 53,
+  "best_params": {
+    "C": 0.003
+  },
+  "val": {
+    "DA": 0.4659090909090909,
+    "BalAcc": 0.46528765352294765,
+    "F1_macro": 0.46528765352294765,
+    "MCC": -0.06942469295410472,
+    "AUC": 0.43787976729153205
+  },
+  "n_configs_tried": 6,
+  "note": "FinBERT, PCA 20; sumber: judul+lead+konten"
+}
