@@ -1,0 +1,20 @@
+{
+  "name": "C2_finbert_mean_HGB",
+  "model": "HGB",
+  "n_features": 32,
+  "best_params": {
+    "max_depth": 3,
+    "learning_rate": 0.03,
+    "max_iter": 100,
+    "min_samples_leaf": 50
+  },
+  "val": {
+    "DA": 0.4772727272727273,
+    "BalAcc": 0.47705235940530055,
+    "F1_macro": 0.47700258397932815,
+    "MCC": -0.04587156576025335,
+    "AUC": 0.4738202973497091
+  },
+  "n_configs_tried": 16,
+  "note": "FinBERT, PCA 20; C2_finbert_mean_HGB"
+}

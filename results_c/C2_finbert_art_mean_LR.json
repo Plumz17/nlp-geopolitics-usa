@@ -1,0 +1,17 @@
+{
+  "name": "C2_finbert_art_mean_LR",
+  "model": "LR",
+  "n_features": 32,
+  "best_params": {
+    "C": 0.01
+  },
+  "val": {
+    "DA": 0.5113636363636364,
+    "BalAcc": 0.5104072398190045,
+    "F1_macro": 0.510351966873706,
+    "MCC": 0.020836040674102496,
+    "AUC": 0.47769877181641884
+  },
+  "n_configs_tried": 16,
+  "note": "FinBERT, PCA 20; C2_finbert_art_mean_LR"
+}

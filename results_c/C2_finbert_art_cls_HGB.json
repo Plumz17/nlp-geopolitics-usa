@@ -1,0 +1,20 @@
+{
+  "name": "C2_finbert_art_cls_HGB",
+  "model": "HGB",
+  "n_features": 32,
+  "best_params": {
+    "max_depth": 3,
+    "learning_rate": 0.03,
+    "max_iter": 100,
+    "min_samples_leaf": 50
+  },
+  "val": {
+    "DA": 0.5909090909090909,
+    "BalAcc": 0.5884938590820944,
+    "F1_macro": 0.5875,
+    "MCC": 0.17884712802707953,
+    "AUC": 0.5681965093729799
+  },
+  "n_configs_tried": 16,
+  "note": "FinBERT, PCA 20; C2_finbert_art_cls_HGB"
+}

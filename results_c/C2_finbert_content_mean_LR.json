@@ -12,6 +12,6 @@
     "MCC": -0.05609047142535242,
     "AUC": 0.4617970265029089
   },
-  "n_configs_tried": 6,
-  "note": "FinBERT, PCA 20; sumber: konten"
+  "n_configs_tried": 16,
+  "note": "FinBERT, PCA 20; C2_finbert_content_mean_LR"
 }

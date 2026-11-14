@@ -1,0 +1,17 @@
+{
+  "name": "C2_finbert_art_content_cls_LR",
+  "model": "LR",
+  "n_features": 53,
+  "best_params": {
+    "C": 0.1
+  },
+  "val": {
+    "DA": 0.48295454545454547,
+    "BalAcc": 0.48409825468649004,
+    "F1_macro": 0.482804275519101,
+    "MCC": -0.031859143428712544,
+    "AUC": 0.4734324499030382
+  },
+  "n_configs_tried": 16,
+  "note": "FinBERT, PCA 20; C2_finbert_art_content_cls_LR"
+}
