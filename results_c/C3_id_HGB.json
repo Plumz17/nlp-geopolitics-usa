@@ -1,0 +1,20 @@
+{
+  "name": "C3_id_HGB",
+  "model": "HGB",
+  "n_features": 32,
+  "best_params": {
+    "max_depth": 3,
+    "learning_rate": 0.1,
+    "max_iter": 300,
+    "min_samples_leaf": 50
+  },
+  "val": {
+    "DA": 0.5625,
+    "BalAcc": 0.5614091790562379,
+    "F1_macro": 0.5613529697362033,
+    "MCC": 0.12303327746860536,
+    "AUC": 0.5409179056237879
+  },
+  "n_configs_tried": 4,
+  "note": "IndoBERT cls, judul+1000 karakter per artikel, PCA 20"
+}

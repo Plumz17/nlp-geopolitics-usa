@@ -1,0 +1,17 @@
+{
+  "name": "C3_id_LR",
+  "model": "LR",
+  "n_features": 32,
+  "best_params": {
+    "C": 0.03
+  },
+  "val": {
+    "DA": 0.5,
+    "BalAcc": 0.5032967032967033,
+    "F1_macro": 0.49681611435997397,
+    "MCC": 0.006716085141878609,
+    "AUC": 0.4844214608920491
+  },
+  "n_configs_tried": 4,
+  "note": "IndoBERT cls, judul+1000 karakter per artikel, PCA 20"
+}
