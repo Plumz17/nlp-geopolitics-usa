@@ -1,0 +1,31 @@
+{
+  "name": "C4_roberta_mean_HGB",
+  "model": "HGB",
+  "n_features": 32,
+  "best_params": {
+    "max_depth": 3,
+    "learning_rate": 0.1,
+    "max_iter": 300,
+    "min_samples_leaf": 50
+  },
+  "val": {
+    "DA": 0.5625,
+    "BalAcc": 0.5637362637362637,
+    "F1_macro": 0.5623728485161623,
+    "MCC": 0.12769559114109988,
+    "AUC": 0.5959922430510666
+  },
+  "n_configs_tried": 4,
+  "note": "RoBERTa-base mean, judul+lead per artikel, PCA 20",
+  "test": {
+    "DA": 0.5,
+    "BalAcc": 0.4990938511326861,
+    "F1_macro": 0.49642391684414633,
+    "MCC": -0.0017898482063054548,
+    "AUC": 0.5109385113268609
+  },
+  "test_auc_ci95": [
+    0.405,
+    0.597
+  ]
+}

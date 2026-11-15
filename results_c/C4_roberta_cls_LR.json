@@ -1,0 +1,17 @@
+{
+  "name": "C4_roberta_cls_LR",
+  "model": "LR",
+  "n_features": 32,
+  "best_params": {
+    "C": 0.3
+  },
+  "val": {
+    "DA": 0.4715909090909091,
+    "BalAcc": 0.4746606334841629,
+    "F1_macro": 0.46869218034862203,
+    "MCC": -0.0515077987472418,
+    "AUC": 0.4986425339366516
+  },
+  "n_configs_tried": 4,
+  "note": "RoBERTa-base cls, judul+lead per artikel, PCA 20"
+}

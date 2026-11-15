@@ -1,0 +1,20 @@
+{
+  "name": "C4_roberta_cls_HGB",
+  "model": "HGB",
+  "n_features": 32,
+  "best_params": {
+    "max_depth": 3,
+    "learning_rate": 0.1,
+    "max_iter": 300,
+    "min_samples_leaf": 50
+  },
+  "val": {
+    "DA": 0.48295454545454547,
+    "BalAcc": 0.48836457659987076,
+    "F1_macro": 0.4723073374847616,
+    "MCC": -0.024532269459515425,
+    "AUC": 0.4875242404654169
+  },
+  "n_configs_tried": 4,
+  "note": "RoBERTa-base cls, judul+lead per artikel, PCA 20"
+}
