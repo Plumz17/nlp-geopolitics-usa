@@ -1,0 +1,17 @@
+{
+  "name": "C5_llm_LR",
+  "model": "LR",
+  "n_features": 30,
+  "best_params": {
+    "C": 0.1
+  },
+  "val": {
+    "DA": 0.4715909090909091,
+    "BalAcc": 0.47815126050420165,
+    "F1_macro": 0.45467266366816594,
+    "MCC": -0.04734888386383709,
+    "AUC": 0.5092436974789916
+  },
+  "n_configs_tried": 2,
+  "note": "Qwen/Qwen2.5-3B-Instruct, label event/region/dollar per artikel -> porsi per hari (19 kolom)"
+}
