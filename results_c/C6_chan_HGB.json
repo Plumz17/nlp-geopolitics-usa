@@ -1,0 +1,29 @@
+{
+  "name": "C6_chan_HGB",
+  "model": "HGB",
+  "n_features": 46,
+  "best_params": {
+    "max_depth": 2,
+    "learning_rate": 0.1,
+    "max_iter": 100,
+    "min_samples_leaf": 50
+  },
+  "val": {
+    "DA": 0.5340909090909091,
+    "BalAcc": 0.5351001939237233,
+    "F1_macro": 0.5340307374402686,
+    "MCC": 0.07027310612445749,
+    "AUC": 0.529153199741435
+  },
+  "n_configs_tried": 6,
+  "note": "C6 salience chan: tau=1.0, k=None, half=2; MiniLM scorer, FinBERT sent cls, PCA20, window 20",
+  "c6_config": {
+    "tau": 1.0,
+    "k": null,
+    "half": 2
+  },
+  "val_auc_ci95": [
+    0.443,
+    0.625
+  ]
+}

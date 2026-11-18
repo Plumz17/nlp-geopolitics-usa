@@ -1,0 +1,37 @@
+{
+  "name": "C6_nov_GRU",
+  "model": "GRU",
+  "n_features": 48,
+  "best_params": {
+    "hidden": 16,
+    "dropout": 0.3,
+    "epochs": 7,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "tau": 1.0,
+    "k": 5
+  },
+  "val": {
+    "DA": 0.45454545454545453,
+    "BalAcc": 0.4570135746606335,
+    "F1_macro": 0.45277885736494367,
+    "MCC": -0.0868760702249875,
+    "AUC": 0.4603749191984486
+  },
+  "n_configs_tried": 12,
+  "c6_config": {
+    "tau": 1.0,
+    "k": 5,
+    "half": 2
+  },
+  "val_auc_ci95": [
+    0.379,
+    0.553
+  ],
+  "note": "C6 salience nov GRU(16) on 20-day sequence"
+}

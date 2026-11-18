@@ -1,0 +1,37 @@
+{
+  "name": "C6_base_GRU",
+  "model": "GRU",
+  "n_features": 33,
+  "best_params": {
+    "hidden": 16,
+    "dropout": 0.3,
+    "epochs": 3,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "tau": null,
+    "k": null
+  },
+  "val": {
+    "DA": 0.45454545454545453,
+    "BalAcc": 0.46360698125404004,
+    "F1_macro": 0.41818181818181815,
+    "MCC": -0.08604376851814508,
+    "AUC": 0.5020038784744667
+  },
+  "n_configs_tried": 3,
+  "c6_config": {
+    "tau": null,
+    "k": null,
+    "half": 10
+  },
+  "val_auc_ci95": [
+    0.399,
+    0.59
+  ],
+  "note": "C6 salience base GRU(16) on 20-day sequence"
+}

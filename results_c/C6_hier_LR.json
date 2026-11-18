@@ -1,0 +1,26 @@
+{
+  "name": "C6_hier_LR",
+  "model": "LR",
+  "n_features": 49,
+  "best_params": {
+    "C": 0.1
+  },
+  "val": {
+    "DA": 0.5,
+    "BalAcc": 0.5005817711700065,
+    "F1_macro": 0.5,
+    "MCC": 0.0011635423400129282,
+    "AUC": 0.4616677440206852
+  },
+  "n_configs_tried": 12,
+  "note": "C6 salience hier: tau=0.5, k=3, half=5; MiniLM scorer, FinBERT sent cls, PCA20, window 20",
+  "c6_config": {
+    "tau": 0.5,
+    "k": 3,
+    "half": 5
+  },
+  "val_auc_ci95": [
+    0.383,
+    0.555
+  ]
+}
