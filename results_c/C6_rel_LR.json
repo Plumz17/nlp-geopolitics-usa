@@ -1,0 +1,26 @@
+{
+  "name": "C6_rel_LR",
+  "model": "LR",
+  "n_features": 34,
+  "best_params": {
+    "C": 0.3
+  },
+  "val": {
+    "DA": 0.4943181818181818,
+    "BalAcc": 0.49043309631544924,
+    "F1_macro": 0.4855322363451243,
+    "MCC": -0.019636551561321932,
+    "AUC": 0.4576599870717518
+  },
+  "n_configs_tried": 3,
+  "note": "C6 salience rel: tau=None, k=None, half=2; MiniLM scorer, FinBERT sent cls, PCA20, window 20",
+  "c6_config": {
+    "tau": null,
+    "k": null,
+    "half": 2
+  },
+  "val_auc_ci95": [
+    0.378,
+    0.547
+  ]
+}

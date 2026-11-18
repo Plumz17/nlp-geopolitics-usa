@@ -1,0 +1,29 @@
+{
+  "name": "C6_nov_HGB",
+  "model": "HGB",
+  "n_features": 49,
+  "best_params": {
+    "max_depth": 2,
+    "learning_rate": 0.03,
+    "max_iter": 300,
+    "min_samples_leaf": 50
+  },
+  "val": {
+    "DA": 0.5454545454545454,
+    "BalAcc": 0.5472527472527473,
+    "F1_macro": 0.5449256625727215,
+    "MCC": 0.09494843376375307,
+    "AUC": 0.5154492566257272
+  },
+  "n_configs_tried": 12,
+  "note": "C6 salience nov: tau=1.0, k=5, half=2; MiniLM scorer, FinBERT sent cls, PCA20, window 20",
+  "c6_config": {
+    "tau": 1.0,
+    "k": 5,
+    "half": 2
+  },
+  "val_auc_ci95": [
+    0.436,
+    0.589
+  ]
+}

@@ -22,3 +22,5 @@ Thumbs.db
 
 # Big Embeddings
 data/embeddings/
+# C6 sentence-level caches (too big for GitHub; rebuilt by 05f)
+data/features_c/c6_*.npy

@@ -1,0 +1,26 @@
+{
+  "name": "C6_chan_LR",
+  "model": "LR",
+  "n_features": 46,
+  "best_params": {
+    "C": 0.003
+  },
+  "val": {
+    "DA": 0.4659090909090909,
+    "BalAcc": 0.4718810601163542,
+    "F1_macro": 0.4520402755696873,
+    "MCC": -0.06005486422106798,
+    "AUC": 0.4667097608274079
+  },
+  "n_configs_tried": 6,
+  "note": "C6 salience chan: tau=1.0, k=None, half=2; MiniLM scorer, FinBERT sent cls, PCA20, window 20",
+  "c6_config": {
+    "tau": 1.0,
+    "k": null,
+    "half": 2
+  },
+  "val_auc_ci95": [
+    0.389,
+    0.559
+  ]
+}
