@@ -1,0 +1,42 @@
+{
+  "name": "C7_share_HGB",
+  "model": "HGB",
+  "n_features": 29,
+  "best_params": {
+    "max_depth": 2,
+    "learning_rate": 0.1,
+    "max_iter": 100,
+    "min_samples_leaf": 20
+  },
+  "val": {
+    "DA": 0.5397727272727273,
+    "BalAcc": 0.5347769877181642,
+    "F1_macro": 0.5269288203086112,
+    "MCC": 0.07276186902981557,
+    "AUC": 0.4961861667744021
+  },
+  "n_configs_tried": 1,
+  "note": "C7 BERTopic (KMeans 15 topik, fit train), varian share; relevan=[0, 1, 3, 4, 8, 11, 12, 13, 14]; setelan C6 nov {'tau': 1.0, 'k': 5, 'half': 2}",
+  "c7_config": {
+    "n_topics": 15,
+    "relevant": [
+      0,
+      1,
+      3,
+      4,
+      8,
+      11,
+      12,
+      13,
+      14
+    ],
+    "c6_ref": "nov",
+    "tau": 1.0,
+    "k": 5,
+    "half": 2
+  },
+  "val_auc_ci95": [
+    0.421,
+    0.587
+  ]
+}

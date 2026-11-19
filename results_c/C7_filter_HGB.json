@@ -1,0 +1,42 @@
+{
+  "name": "C7_filter_HGB",
+  "model": "HGB",
+  "n_features": 36,
+  "best_params": {
+    "max_depth": 2,
+    "learning_rate": 0.1,
+    "max_iter": 300,
+    "min_samples_leaf": 20
+  },
+  "val": {
+    "DA": 0.48863636363636365,
+    "BalAcc": 0.4895927601809955,
+    "F1_macro": 0.4885703215807826,
+    "MCC": -0.020836040674102496,
+    "AUC": 0.45391079508726573
+  },
+  "n_configs_tried": 1,
+  "note": "C7 BERTopic (KMeans 15 topik, fit train), varian filter; relevan=[0, 1, 3, 4, 8, 11, 12, 13, 14]; setelan C6 nov {'tau': 1.0, 'k': 5, 'half': 2}",
+  "c7_config": {
+    "n_topics": 15,
+    "relevant": [
+      0,
+      1,
+      3,
+      4,
+      8,
+      11,
+      12,
+      13,
+      14
+    ],
+    "c6_ref": "nov",
+    "tau": 1.0,
+    "k": 5,
+    "half": 2
+  },
+  "val_auc_ci95": [
+    0.36,
+    0.546
+  ]
+}
