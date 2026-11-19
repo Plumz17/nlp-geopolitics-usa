@@ -1,4 +1,4 @@
-# Core
+#Core
 pandas>=2.0
 numpy>=1.26
 scikit-learn>=1.3
@@ -7,22 +7,23 @@ matplotlib>=3.8
 seaborn>=0.13
 jupyter
 
-# Data loading
-openpyxl>=3.1            # membaca Informasi_Kurs_Jisdor.xlsx
+#Data loading
+openpyxl>=3.1       
 
-# Scraping (src/00a_scraper.ipynb)
+#Scraping (src/00a_scraper.ipynb)
 requests>=2.31
 beautifulsoup4>=4.12
 trafilatura>=1.8
 googlenewsdecoder>=0.1
 
-# NLP dasar (src/02_feature_extraction.ipynb)
+#NLP dasar (src/02_feature_extraction.ipynb)
 vaderSentiment>=3.3
 
-# Tugas 3: Model C_1, FastText (src/05a_C1_static.ipynb)
+#Tugas 3: Model C_1, FastText (src/05a_C1_static.ipynb)
 gensim>=4.3
 
-# Tugas 3: fitur Transformer / embedding (belum dipakai; aktifkan sesuai pilihan Model C)
-# transformers>=4.40
-# torch>=2.2
-# sentence-transformers>=3.0
+#Tugas 3: fitur Transformer / embedding (05b-05f)
+transformers>=4.40
+torch>=2.2
+sentence-transformers>=3.0 )
+bertopic>=0.16        
