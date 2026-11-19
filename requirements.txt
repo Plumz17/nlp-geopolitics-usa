@@ -25,5 +25,5 @@ gensim>=4.3
 #Tugas 3: fitur Transformer / embedding (05b-05f)
 transformers>=4.40
 torch>=2.2
-sentence-transformers>=3.0 )
+sentence-transformers>=3.0
 bertopic>=0.16        
