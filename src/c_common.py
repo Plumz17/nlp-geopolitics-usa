@@ -120,7 +120,8 @@ def make_model(kind, p):
     class_weight="balanced" supaya hari naik/turun diperlakukan seimbang."""
     if kind == "LR":
         return make_pipeline(StandardScaler(), LogisticRegression(**p, class_weight="balanced", max_iter=5000))
-    return HistGradientBoostingClassifier(**p, l2_regularization=1.0, class_weight="balanced", random_state=SEED)
+    # l2_regularization = 1.0 kecuali p menentukan sendiri (dipakai pada tuning akhir, 05i)
+    return HistGradientBoostingClassifier(**{"l2_regularization": 1.0, **p}, class_weight="balanced", random_state=SEED)
 
 
 def tune(kind, D, cols):
