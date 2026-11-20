@@ -15,6 +15,6 @@
     "MCC": -0.04587156576025335,
     "AUC": 0.4738202973497091
   },
-  "n_configs_tried": 16,
+  "n_configs_tried": 6,
   "note": "FinBERT, PCA 20; C2_finbert_mean_HGB"
 }

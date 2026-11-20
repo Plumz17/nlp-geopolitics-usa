@@ -15,6 +15,6 @@
     "MCC": 0.17884712802707953,
     "AUC": 0.5681965093729799
   },
-  "n_configs_tried": 16,
+  "n_configs_tried": 6,
   "note": "FinBERT, PCA 20; C2_finbert_art_cls_HGB"
 }
