@@ -16,5 +16,16 @@
     "AUC": 0.5681965093729799
   },
   "n_configs_tried": 6,
-  "note": "FinBERT, PCA 20; C2_finbert_art_cls_HGB"
+  "note": "FinBERT, PCA 20; C2_finbert_art_cls_HGB",
+  "test": {
+    "DA": 0.5842696629213483,
+    "BalAcc": 0.5610355987055016,
+    "F1_macro": 0.5597593582887701,
+    "MCC": 0.12700025714839938,
+    "AUC": 0.5936569579288026
+  },
+  "test_auc_ci95": [
+    0.515,
+    0.662
+  ]
 }
