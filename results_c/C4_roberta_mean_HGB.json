@@ -16,16 +16,5 @@
     "AUC": 0.5959922430510666
   },
   "n_configs_tried": 4,
-  "note": "RoBERTa-base mean, judul+lead per artikel, PCA 20",
-  "test": {
-    "DA": 0.5,
-    "BalAcc": 0.4990938511326861,
-    "F1_macro": 0.49642391684414633,
-    "MCC": -0.0017898482063054548,
-    "AUC": 0.5109385113268609
-  },
-  "test_auc_ci95": [
-    0.405,
-    0.597
-  ]
+  "note": "RoBERTa-base mean, judul+lead per artikel, PCA 20"
 }
