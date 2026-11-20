@@ -1,0 +1,25 @@
+{
+  "name": "C2_finbert_art_cls_HGB_tuned",
+  "model": "HGB",
+  "n_features": 32,
+  "best_params": {
+    "max_depth": 6,
+    "learning_rate": 0.005,
+    "max_iter": 100,
+    "min_samples_leaf": 50,
+    "l2_regularization": 0.1
+  },
+  "val": {
+    "DA": 0.6022727272727273,
+    "BalAcc": 0.6029734970911442,
+    "F1_macro": 0.6022727272727273,
+    "MCC": 0.2059469941822883,
+    "AUC": 0.5785391079508726
+  },
+  "n_configs_tried": 3600,
+  "val_auc_ci95": [
+    0.512,
+    0.66
+  ],
+  "note": "FinBERT art cls, PCA 20; tuning akhir 3a (3600 setelan HGB)"
+}
