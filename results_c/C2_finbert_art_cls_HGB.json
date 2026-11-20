@@ -6,7 +6,8 @@
     "max_depth": 3,
     "learning_rate": 0.03,
     "max_iter": 100,
-    "min_samples_leaf": 50
+    "min_samples_leaf": 50,
+    "l2_regularization": 1.0
   },
   "val": {
     "DA": 0.5909090909090909,
@@ -15,8 +16,8 @@
     "MCC": 0.17884712802707953,
     "AUC": 0.5681965093729799
   },
-  "n_configs_tried": 6,
-  "note": "FinBERT, PCA 20; C2_finbert_art_cls_HGB",
+  "n_configs_tried": 432,
+  "note": "FinBERT art cls, PCA 20; tuning akhir 3a (432 setelan HGB)",
   "test": {
     "DA": 0.5842696629213483,
     "BalAcc": 0.5610355987055016,
@@ -27,5 +28,9 @@
   "test_auc_ci95": [
     0.515,
     0.662
+  ],
+  "val_auc_ci95": [
+    0.504,
+    0.654
   ]
 }
