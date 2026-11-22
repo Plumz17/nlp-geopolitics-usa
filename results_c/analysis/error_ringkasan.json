@@ -1,0 +1,30 @@
+{
+  "tabel": {
+    "keduanya benar": 57,
+    "hanya C benar": 47,
+    "hanya A benar": 32,
+    "keduanya salah": 42
+  },
+  "DA_C": 0.5842696629213483,
+  "DA_C_ci95": [
+    0.506,
+    0.652
+  ],
+  "DA_A": 0.5,
+  "DA_A_ci95": [
+    0.421,
+    0.573
+  ],
+  "dDA_C_minus_A": 0.0842696629213483,
+  "dDA_ci95": [
+    -0.006,
+    0.18
+  ],
+  "mcnemar_p_dua_sisi": 0.11466035574580133,
+  "binom_p_C_vs_50": 0.014722987533758228,
+  "binom_p_C_vs_mayoritas": 0.4713430650497415,
+  "porsi_tebak_naik_C": 0.6573033707865169,
+  "porsi_tebak_naik_A": 0.48314606741573035,
+  "porsi_naik_aktual": 0.5786516853932584,
+  "porsi_naik_di_hanya_C_benar": 0.7446808510638298
+}

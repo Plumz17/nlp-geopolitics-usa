@@ -1,0 +1,16 @@
+kelompok,hari,DA_C,DA_A,jenis
+0-2 artikel,11,0.364,0.727,kelompok_artikel
+3-7 artikel,23,0.565,0.478,kelompok_artikel
+>=8 artikel,144,0.604,0.486,kelompok_artikel
+|dP| <= Rp10,28,0.571,0.393,kelompok_gerak
+|dP| > Rp10,150,0.587,0.52,kelompok_gerak
+2025-11,3,1.0,1.0,bulan
+2025-12,21,0.571,0.476,bulan
+2026-01,20,0.6,0.4,bulan
+2026-02,18,0.722,0.778,bulan
+2026-03,17,0.529,0.471,bulan
+2026-04,21,0.524,0.476,bulan
+2026-05,16,0.562,0.625,bulan
+2026-06,20,0.55,0.55,bulan
+2026-07,23,0.609,0.261,bulan
+2026-08,19,0.526,0.474,bulan
