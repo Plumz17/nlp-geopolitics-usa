@@ -1,0 +1,38 @@
+# Versi dipin agar angka di results_c/ (Tugas 3) bisa direproduksi persis.
+# requirements.txt dipakai untuk instalasi umum; requirements-lock.txt untuk reproduksi persis
+# (pip install -r requirements-lock.txt). Python 3.13.
+
+
+
+# Inti (diverifikasi)
+scikit-learn==1.8.0
+numpy==2.5.3
+pandas==3.0.5
+scipy==1.18.1
+matplotlib==3.11.2
+seaborn==0.13.2
+openpyxl==3.1.5
+
+# Untuk menjalankan notebook dari terminal (jupyter nbconvert --execute)
+jupyter==1.1.1
+nbconvert==7.17.2
+nbformat==5.11.1
+nbclient==0.11.0
+ipykernel==7.4.0
+
+# Scraping dan NLP dasar (Tugas 1-2)
+requests==2.34.2
+beautifulsoup4==4.15.0
+vaderSentiment==3.3.2
+
+# Embedding / transformer (05a-05h). Versi persis yang dipakai saat membuat cache embedding
+# belum tercatat di repo; baris di bawah akan diisi dari hasil `pip freeze` anggota tim yang
+# menjalankan notebook 05b-05h.
+# gensim==
+# transformers==
+# torch==
+# sentence-transformers==
+# bertopic==
+# umap-learn==
+# trafilatura==
+# googlenewsdecoder==
