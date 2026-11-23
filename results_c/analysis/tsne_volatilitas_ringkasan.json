@@ -1,0 +1,17 @@
+{
+  "n_tinggi": 232,
+  "n_rendah": 233,
+  "ambang_rendah": 0.0006593736189746,
+  "ambang_tinggi": 0.00385025843061188,
+  "knn5_balanced_acc": 0.5090656799259945,
+  "knn5_per_fold": [
+    0.504,
+    0.462,
+    0.504,
+    0.582,
+    0.494
+  ],
+  "knn5_label_acak_mean": 0.5061424606845513,
+  "knn5_label_acak_p95": 0.5388344125809436,
+  "silhouette_cosine": -0.0003268539148848504
+}
